@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haloweentochtinschrijvingsformulier</title>
+   <!--  external stylesheet... most common style implementation ever -->
+   <link rel="stylesheet" href="style.css">
+   
+    <style>
+        td {
+            /* Internal style sheet, bij adding a style tag;
+            and the style attributes in the head tag.
+            border: 1px solid black;
+            padding: 20px;
+             */
+        }
+        
+        
+    </style>
+</head>
+<!-- inline style, used to override the blue from the internal style -->
+ 
+<body>
+    <h1 class="title">HaloWeeN Walk 2.0</h1>
+    <nav>
+        <a class="navlink" href="index.html">Home</a>
+        <a class="navlink" href="about.html">Over onze wandeling</a>
+        <a class="navlink" href="contact.html">Contacteer ons</a>
+        <a class="navlink" href="haloweeninfo.pdf" target="_blank">Download onze pdf</a>
+    </nav>
+    <table>
+        <tr>
+            <td rowspan="4"><h1 class="haloween">haloween inschrijving</h1>
+            <img class="jackolantern" src="jackolantern.png" alt="logo of jackolantern">
+            </td>
+            <td><input type="text" id="lastname" placeholder="lastname"></td>
+            <td><input type="text" id="firstname" placeholder="firstname"></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="email" placeholder="email"></td>
+            <td><input type="text" id="phone" placeholder="phone"></td>
+        </tr>
+        <tr>
+            <td><input type="number" id="amount" placeholder="amount"></td>
+            <td>
+              <!--   radio buttons for selection of 20h or 21h -->
+                <div class="time">
+
+                    <h3>Selecteer de tijd</h3>
+                    <input type="radio" id="20h" name="time" value="20">
+                    <label for="20h"><b>20h</b></label>
+                    <input type="radio" id="21h" name="time" value="21">
+                    <label for="21h">21h</label>
+    
+                    <h4>Zijn jullie snel bang?</h4>
+                    <select name="scared" id="scared">
+                        <option>maak een keuze</option>
+                        <option value="ja">Ja zeker, heel snel bang</option>
+                        <option value="nee">Neen, niets kan ons doen verschrikken</option>
+                    </select>
+
+                </div>
+
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <h3>Extra's voor the smullen</h3>
+               <!--  3 checkboxen met de volgende opties: soup, broodje, jenever -->
+                <input type="checkbox" id="soup" name="soup">
+                <label for="soup">soup</label>
+                <input type="checkbox" id="broodje" name="broodje">
+                <label for="broodje">broodje</label>
+                <input type="checkbox" id="jenever" name="jenever">
+                <label for="jenever">jenever</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h4>Algemene voorwaarden</h4>
+                <input type="checkbox" id="alg" name="alg" checked>
+                <label for="alg">Ik ga akoord</label>
+            </td>
+            <td colspan="2">
+               <!--  <input type="submit" value="Submit"> -->
+                <button onclick="alert('ok dankjewel uw wordt verwacht')">Ja, ik durf de tocht aan!</button>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

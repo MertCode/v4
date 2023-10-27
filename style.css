@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Montserrat:wght@100;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+html {
+    background: rgb(167,54,29);
+    background: linear-gradient(168deg, rgba(167,54,29,1) 0%, #f09342 71%);
+    font-family: quicksand;
+}
+
+body {
+    color: #fff;
+}
+
+a.navlink {
+    color: white;
+    text-decoration: none;
+    background: orange;
+    padding: 10px;
+}
+
+a.navlink:hover {
+    background: black;
+}
+
+/* input#lastname:focus {
+    focus is used to highlight the input box
+    when starting to type... (pseudo class)
+
+    background-color: blueviolet;
+    color: white;
+} */
+input {
+    padding: 12px;
+    border: orange;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    font-size: 19px;
+}
+
+input::placeholder {
+    color: orange;
+  }
+
+td {
+    vertical-align: top;
+}
+
+td.cross {
+   height: 3em;
+   width: 3em;
+   border: 1px solid white;
+   vertical-align: top;
+}
+
+.white {
+    background-color: white;
+    
+}
+
+.time {
+    text-align: right;
+}
+
+nav {
+    margin-bottom: 32px;
+}
+
+
+h1.haloween {
+    color: #faebd733;
+    font-family: 'Creepster', cursive;
+}
+
+h1.title {
+    font-family: 'Creepster', cursive;
+    color: orange;
+    /* font-weight: 700; */
+    font-size: 43px;
+    letter-spacing: 2px;
+}
+
+
+img.jackolantern {
+  width: 300px;
+ /*  box-shadow: 0 0 10px 10px white;
+  animation: pulsate 1s infinite; */
+}
+
+button {
+    background-color: #e07c1a;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+}
+
+@keyframes pulsate {
+  0% {
+    box-shadow: 0 0 10px 10px white;
+  }
+  50% {
+    box-shadow: 0 0 15px 15px white;
+  }
+  100% {
+    box-shadow: 0 0 10px 10px white;
+  }
+}
